@@ -1,0 +1,133 @@
+body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    background-color: gray;
+}
+
+.nabi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin: 2%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nabi a:active {
+    color: aqua;
+}
+
+.img{
+    position: relative;
+    overflow: hidden;
+}
+.mainimage {
+    width: 100%;
+    height: 400px;
+    transition: all .5s;
+}
+.mainimage:active{
+    transform: rotate(360000deg);
+}
+
+.uum {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: min(1000px,calc(100% - 32%));
+    border: 1px solid black;
+    height: auto;
+    gap: 10px;
+}
+
+.m3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.pc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer {
+    width: 400px;
+}
+
+.footer a {
+    color: white;
+}
+.mo{
+    display: none;
+}
+@media screen and (max-width: 430px){
+    main{
+        padding-bottom: 80px;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    footer{
+        height: 70px;
+        z-index: 101;
+    }
+    .footer{
+        display: none;
+    }
+    .mo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+        height: 70px;
+        background-color: black;
+    }
+    .mo img{
+        width: 15%;
+
+    }
+}
