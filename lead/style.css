@@ -39,7 +39,7 @@ a {
 .mainimage {
     width: 100%;
     height: 400px;
-    transition: all 5s;
+    transition: all .5s;
 }
 
 .mainimage:active {

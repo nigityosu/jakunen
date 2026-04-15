@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+}
+.a{
+    margin: 2%;
+}
+header{
+    height: 80px;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nabi{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.up a{
+    width: 15%;
+    height: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.up a:hover{
+    background-color: white;
+    font-size: large;
+}
+.imagen{
+    position: relative;
+    height: 400px;
+}
+.input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 200;
+    font-size: large;
+    text-align: center;
+}
+.mainimg{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    object-fit: cover;
+}
+.one{
+    animation: m1 20s infinite;
+    z-index: 100;
+}
+.content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentarea{
+    max-width: 1000px;
+    width: 100%;
+    border: 1px solid black;
+}
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.down{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1%;
+}
+.down a{
+    color: white;
+}
+.mozi{
+    color: white;
+    margin: 1%;
+}
+.mobile{
+    display: none;
+    background-color: black;
+}
+@keyframes m1 {
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@media screen and (max-width:430px){
+    body{
+        padding-bottom: 80px;
+    }
+    header{
+        flex-direction: column;
+    }
+    .a{
+        font-size: 25px;
+    }
+    .nabi{
+        display: none;
+    }
+    .down{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        background-color: black;
+        bottom: 0;
+        height: 80px;
+    }
+    .mozi{
+        margin: 2%;
+    }
+    .mobile img{
+        width: 15%;
+    }
+}

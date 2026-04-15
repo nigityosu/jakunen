@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+}
+.nabi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+    margin-right: 2%;
+    height: 100%;
+}
+.nabi a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.nabi a:hover{
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.key{
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+.img{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+}
+.img2{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    animation-delay: 10s;
+    top: 0;
+}
+.saki{
+    animation: m1 10s infinite;
+    z-index: 100;
+}
+.saki2{
+    animation: m2 10s infinite;
+    animation-delay: 10s;
+}
+.ato{
+    animation: m2 10s infinite;
+    animation-delay: 5s;
+}
+.ato2{
+    animation: m1 10s infinite;
+    animation-delay: 15s;
+}
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contentarea{
+    width: 1000px;
+    height: auto;
+    border: 1px solid black;
+}
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nabi2{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1%;
+}
+.nabi2 a{
+    color: #fff;
+}
+.moji{
+    color: #fff;
+    margin: 1%;
+}
+@keyframes m1 {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 200%;
+    }
+}
+@keyframes m2 {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 200%;
+    }
+}
