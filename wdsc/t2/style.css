@@ -43,7 +43,7 @@ a {
 }
 
 .mainimage:active {
-    transform: rotate(360000deg);
+    transform: rotate(3600000000000deg);
 }
 
 .uum {

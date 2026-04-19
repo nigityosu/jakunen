@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+}
+
+.nabi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.up {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.up a {
+    color: black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.up a:hover {
+    background-color: white;
+    font-size: large;
+}
+
+.imagin {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.imagin img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mozi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.ato {
+    animation: m1 10s infinite;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentarea {
+    max-width: 1000px;
+    padding: 30px;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.down a {
+    color: white;
+}
+
+.down {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1%;
+    width: 60%;
+}
+
+.moji {
+    color: white;
+    margin-bottom: 1%;
+}
+.mo{
+    display: none;
+}
+
+@keyframes m1 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .down {
+        display: none;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    header h1{
+        font-size: medium;
+    }
+    .up{
+        width: 70%;
+    }
+    body{
+        padding-bottom: 80px;
+    }
+    .moji{
+        margin: 2%;
+    }
+
+    .mo{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        background-color: black;
+    }
+    .mo img{
+        width: 15%;
+    }
+}
