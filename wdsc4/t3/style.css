@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+}
+a{
+    text-decoration: none;
+}
+.up{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.up a{
+    color: #000;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+}
+.up a:hover{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+}
+.imagin{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.moji{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 100;
+    text-align: center;
+}
+.imagin img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.dou{
+    animation: m0 10s infinite;
+}
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentarea{
+    max-width: 1000px;
+    padding: 40px;
+}
+footer{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.down{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1%;
+}
+.down a{
+    color: white;
+}
+.mozi{
+    color: white;
+    padding: 20px;
+}
+.mo{
+    display: none;
+}
+@keyframes m0 {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@media screen and (max-width:430px) {
+    body{
+        padding-bottom: 80px;
+    }
+    header{
+        flex-direction: column;
+    }
+    h1{
+        font-size: medium;
+    }
+    .up{
+        width: 85%;
+    }
+    .down{
+        display: none;
+    }
+    .mo{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #000;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 80px;
+    }
+    .mo img{
+        width: 15%;
+    }
+}
