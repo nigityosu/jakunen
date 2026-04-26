@@ -1,0 +1,25 @@
+table {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+@media screen and (max-width:430px) {
+    th{
+        display: none;
+    }
+    tr{
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+    }
+    .one{
+        background-color: aqua;
+    }
+}

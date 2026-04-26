@@ -1,0 +1,46 @@
+body{
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+}
+form{
+    width: 50%;
+    background-color: aliceblue;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.in{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    display: flex;
+    width: 40%;
+}
+.zyu{
+    color: red;
+    margin-left: 1%;
+}
+input{
+    width: 20%;
+    height: 50%;
+}
+.bi{
+    width: 30%;
+}
+button{
+    width: 40%;
+}
+@media screen and (max-width:430px) {
+    form{
+        width: 100%;
+    }
+    .in{
+        flex-direction: column;
+    }
+}
